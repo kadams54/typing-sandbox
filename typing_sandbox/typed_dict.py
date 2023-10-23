@@ -15,7 +15,7 @@ def echo(cats: Sequence[Cat]) -> Sequence[Cat]:
 
 
 def name(cats: Sequence[StrictCat]) -> Sequence[str]:
-    return [c["name"] for c in cats]
+    return [c.get("name", "") for c in cats]
 
 
 cats: Sequence[StrictCat] = [
