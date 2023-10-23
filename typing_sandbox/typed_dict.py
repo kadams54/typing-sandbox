@@ -1,4 +1,4 @@
-from typing import TypedDict
+from typing import Sequence, TypedDict
 
 
 class Cat(TypedDict, total=False):
@@ -10,15 +10,15 @@ class StrictCat(Cat, total=True):
     pass
 
 
-def echo(cats: list[Cat]) -> list[Cat]:
+def echo(cats: Sequence[Cat]) -> Sequence[Cat]:
     return cats
 
 
-def name(cats: list[StrictCat]) -> list[str]:
+def name(cats: Sequence[StrictCat]) -> Sequence[str]:
     return [c["name"] for c in cats]
 
 
-cats: list[StrictCat] = [
+cats: Sequence[StrictCat] = [
     {"age": 4, "name": "Daisy"},
     {"age": 6, "name": "Superman"},
 ]
