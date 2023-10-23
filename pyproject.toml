@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "typing-sandbox"
+version = "0.1.0"
+description = ""
+authors = ["Kyle Adams <kadams54@users.noreply.github.com>"]
+readme = "README.md"
+packages = [{include = "typing_sandbox"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+pyright = "^1.1.332"
+mypy = "^1.6.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
