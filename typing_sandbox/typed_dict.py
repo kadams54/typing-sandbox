@@ -18,9 +18,10 @@ def name(cats: Sequence[StrictCat]) -> Sequence[str]:
     return [c.get("name", "") for c in cats]
 
 
-cats: Sequence[StrictCat] = [
-    {"age": 4, "name": "Daisy"},
-    {"age": 6, "name": "Superman"},
-]
-other_cats = echo(cats)
-print(name(other_cats))
+def run():
+    cats: Sequence[StrictCat] = [
+        {"age": 4, "name": "Daisy"},
+        {"age": 6, "name": "Superman"},
+    ]
+    other_cats = echo(cats)
+    print(name(other_cats))
