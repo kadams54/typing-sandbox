@@ -21,7 +21,7 @@ def name(cats: Sequence[Cat]) -> Sequence[str]:
     return [c.name or "" for c in cats]
 
 
-def run():
+def run() -> None:
     cats: Sequence[StrictCat] = [
         StrictCat(age=4, name="Daisy"),
         StrictCat(age=6, name="Superman"),
