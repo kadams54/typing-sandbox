@@ -24,6 +24,6 @@ def run(data: Any) -> None:
     #   // e.g.: Could not validate data: Invalid value "foo" supplied to : { userId: number, name: string }/userId: number
     #
     except ValidationError as error:
-        raise Exception(f"Could not validate data: {error.errors}")
+        raise Exception(f"Could not validate data: {error}")
     print(f"User: {decodedUser}")
     print(f"User type: {type(decodedUser)}")
