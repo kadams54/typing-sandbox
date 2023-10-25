@@ -191,6 +191,17 @@ all = ["twine (>=3.4.1)"]
 dev = ["twine (>=3.4.1)"]
 
 [[package]]
+name = "result"
+version = "0.13.1"
+description = "A Rust-like result type for Python"
+category = "main"
+optional = false
+python-versions = ">=3.8"
+
+[package.dependencies]
+typing-extensions = {version = "*", markers = "python_version < \"3.10\""}
+
+[[package]]
 name = "rich"
 version = "13.6.0"
 description = "Render rich text, tables, progress bars, syntax highlighting, markdown and more to the terminal"
@@ -245,7 +256,7 @@ python-versions = "*"
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.9"
-content-hash = "545c3ef63675d15d5ab26cee5589dcd1ea7f7233b6ffce11df2581af796f6ddb"
+content-hash = "754303aaa746abb9ebc9b6fb80c1a006e25a4988c8fdbcde9b4c40415bffcd8d"
 
 [metadata.files]
 annotated-types = [
@@ -436,6 +447,10 @@ pygments = [
 pyright = [
     {file = "pyright-1.1.332-py3-none-any.whl", hash = "sha256:4802bdc603f165ccfb84338ef850e90181abbb621028b09b81ec8aa5e97dfae2"},
     {file = "pyright-1.1.332.tar.gz", hash = "sha256:a47f760c2f00aa9f593f78a7b22f98b22a9b9e1952d6a31dbed91842ca47b0b3"},
+]
+result = [
+    {file = "result-0.13.1-py3-none-any.whl", hash = "sha256:7730100236fa6048cc831b580fdc460c5eed09932b8772d272417067a0fe762a"},
+    {file = "result-0.13.1.tar.gz", hash = "sha256:8254cef5be1d400bd1df3cb33adf47849ca806c77bf0a45037be47f9496db9be"},
 ]
 rich = [
     {file = "rich-13.6.0-py3-none-any.whl", hash = "sha256:2b38e2fe9ca72c9a00170a1a2d20c63c790d0e10ef1fe35eba76e1e7b1d7d245"},

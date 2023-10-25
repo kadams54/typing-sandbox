@@ -13,6 +13,7 @@ mypy = "^1.6.1"
 pydantic = "^2.4.2"
 rich = "^13.6.0"
 ptpython = "^3.0.23"
+result = "^0.13.1"
 
 
 [build-system]
